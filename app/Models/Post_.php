@@ -40,8 +40,14 @@ class Post_
 // quibusdam nobis nostrum quas! Eveniet, delectus aliquam! Quis officia consectetur perspiciatis consequatur possimus eligendi dolor a, assumenda natus illum voluptate minus. Ratione quam voluptates nesciunt doloremque sequi maxime veritatis!</p>
 
 Post::create([
-    'title' => 'Judul Dua',
-    'slug' => 'judul-dua',
-    'excerpt' => 'Lorem ipsum Dua',
+    'title' => 'Judul Tiga',
+    'category_id' => 3,
+    'slug' => 'judul-tiga',
+    'excerpt' => 'Lorem ipsum Tiga-.',
     'body' => '<p>ssssssssssssssssssssssssssssssssssss</p><p>bbbbbbbbbbbb</p>'
+]);
+
+Category::create([
+    'name' => 'Personal',
+    'slug' => 'personal'
 ]);
