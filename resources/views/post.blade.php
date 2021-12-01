@@ -9,8 +9,8 @@
                     {{ $post->title}}
                 </h2>
 
-                <P>by <a href="/authors/{{ $post->author->username}}" class="text-decoration-none">{{ $post->author->name}}</a>
-                    <a href="/categories/{{$post->category->slug}}" class="text-decoration-none">{{ $post->category->name}}</a></P>
+                <P>by <a href="/blog?author={{ $post->author->username}}" class="text-decoration-none">{{ $post->author->name}}</a> in
+                    <a href="/blog?category={{$post->category->slug}}" class="text-decoration-none">{{ $post->category->name}}</a></P>
 
                     <img src="https://source.unsplash.com/1200x400?{{ $post->category->name}}" class="img-fluid" alt="{{ $post->category->name}}">
 
